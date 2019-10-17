@@ -2,7 +2,7 @@
 
 *NOTE* This is a copy of Google's plugin for Connectivity which you can find here:
 [connectivity](https://github.com/flutter/plugins/tree/master/packages/connectivity), this fork was created so that we could
-remove the deprecated code and target connectivity for apps higher than API 23
+remove the deprecated code.
 
 
 This plugin allows Flutter apps to discover network connectivity and configure
