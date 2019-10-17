@@ -15,9 +15,12 @@
 
     <application
         android:name="io.flutter.app.FlutterApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="connectivity_example" >
+        android:label="connectivity_plugin_example"
+        android:supportsRtl="true" >
         <activity
             android:name="io.flutter.plugins.connectivityexample.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection"

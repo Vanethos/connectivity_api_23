@@ -11,6 +11,10 @@ gradle.buildFinished { buildResult ->
     }
 }
 
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+
 group 'io.flutter.plugins.connectivity'
 version '1.0-SNAPSHOT'
 
@@ -38,10 +42,15 @@ android {
     compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 23
+        minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
         disable 'InvalidPackage'
     }
+}
+
+
+dependencies {
+    implementation 'com.github.jumadeveloper:networkmanager:0.0.2'
 }
