@@ -6,7 +6,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="23"
+        android:minSdkVersion="16"
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,12 +15,9 @@
 
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:allowBackup="true"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="connectivity_plugin_example"
-        android:supportsRtl="true" >
+        android:label="connectivity_plugin_example" >
         <activity
             android:name="io.flutter.plugins.connectivityexample.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection"
@@ -34,6 +31,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name="com.novoda.merlin.MerlinService"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -6,8 +6,6 @@ package io.flutter.plugins.connectivity;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
@@ -16,8 +14,9 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 
-import com.androidstudy.networkmanager.Monitor;
-import com.androidstudy.networkmanager.Tovuti;
+import com.novoda.merlin.Connectable;
+import com.novoda.merlin.Disconnectable;
+import com.novoda.merlin.Merlin;
 
 import io.flutter.plugin.common.EventChannel;
 import io.flutter.plugin.common.EventChannel.EventSink;
@@ -28,159 +27,182 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
-/** ConnectivityPlugin */
+/**
+ * ConnectivityPlugin
+ */
 public class ConnectivityPlugin implements MethodCallHandler, StreamHandler {
-  private final Registrar registrar;
-  private final ConnectivityManager manager;
-  private BroadcastReceiver receiver;
+    private final Registrar registrar;
+    private BroadcastReceiver receiver;
+    private final ConnectivityManager manager;
+    private Merlin merlin;
 
-  /** Plugin registration. */
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel =
-        new MethodChannel(registrar.messenger(), "plugins.flutter.io/connectivity");
-    final EventChannel eventChannel =
-        new EventChannel(registrar.messenger(), "plugins.flutter.io/connectivity_status");
-    ConnectivityPlugin instance = new ConnectivityPlugin(registrar);
-    channel.setMethodCallHandler(instance);
-    eventChannel.setStreamHandler(instance);
-  }
-
-  private ConnectivityPlugin(Registrar registrar) {
-    this.registrar = registrar;
-    this.manager =
-        (ConnectivityManager)
-            registrar
-                .context()
-                .getApplicationContext()
-                .getSystemService(Context.CONNECTIVITY_SERVICE);
-  }
-
-  @Override
-  public void onListen(Object arguments, final EventSink events) {
-    Tovuti.from(registrar.context()).monitor(new Monitor.ConnectivityListener(){
-      @Override
-      public void onConnectivityChanged(int connectionType, boolean isConnected, boolean isFast){
-        events.success(checkNetworkType());
-      }
-    });
-  }
-
-  @Override
-  public void onCancel(Object arguments) {
-    Tovuti.from(registrar.context()).stop();
-  }
-
-  private String getNetworkType(ConnectivityManager manager) {
-    if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-
-      Network network = manager.getActiveNetwork();
-      NetworkCapabilities capabilities = manager.getNetworkCapabilities(network);
-      if (capabilities == null) {
-        return "none";
-      }
-      if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
-          || capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)) {
-        return "wifi";
-      }
-      if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
-        return "mobile";
-      }
+    /**
+     * Plugin registration.
+     */
+    public static void registerWith(Registrar registrar) {
+        final MethodChannel channel =
+                new MethodChannel(registrar.messenger(), "plugins.flutter.io/connectivity");
+        final EventChannel eventChannel =
+                new EventChannel(registrar.messenger(), "plugins.flutter.io/connectivity_status");
+        ConnectivityPlugin instance = new ConnectivityPlugin(registrar);
+        channel.setMethodCallHandler(instance);
+        eventChannel.setStreamHandler(instance);
     }
 
-    return getNetworkTypeLegacy(manager);
-  }
-
-  @SuppressWarnings("deprecation")
-  private String getNetworkTypeLegacy(ConnectivityManager manager) {
-    // handle type for Android versions less than Android 9
-    NetworkInfo info = manager.getActiveNetworkInfo();
-    if (info == null || !info.isConnected()) {
-      return "none";
+    private ConnectivityPlugin(Registrar registrar) {
+        this.registrar = registrar;
+        this.merlin = new Merlin.Builder().withConnectableCallbacks().withDisconnectableCallbacks().build(registrar.context());
+        this.manager =
+                (ConnectivityManager)
+                        registrar
+                                .context()
+                                .getApplicationContext()
+                                .getSystemService(Context.CONNECTIVITY_SERVICE);
     }
-    int type = info.getType();
-    switch (type) {
-      case ConnectivityManager.TYPE_ETHERNET:
-      case ConnectivityManager.TYPE_WIFI:
-      case ConnectivityManager.TYPE_WIMAX:
-        return "wifi";
-      case ConnectivityManager.TYPE_MOBILE:
-      case ConnectivityManager.TYPE_MOBILE_DUN:
-      case ConnectivityManager.TYPE_MOBILE_HIPRI:
-        return "mobile";
-      default:
-        return "none";
+
+    @Override
+    public void onListen(Object arguments, final EventSink events) {
+        merlin.bind();
+        merlin.registerConnectable(new Connectable() {
+            @Override
+            public void onConnect() {
+                registrar.activity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        events.success(checkNetworkType());
+                    }
+                });
+            }
+        });
+        merlin.registerDisconnectable(new Disconnectable() {
+            @Override
+            public void onDisconnect() {
+                registrar.activity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        events.success(checkNetworkType());
+                    }
+                });
+            }
+        });
     }
-  }
 
-  @Override
-  public void onMethodCall(MethodCall call, Result result) {
-    switch (call.method) {
-      case "check":
-        handleCheck(call, result);
-        break;
-      case "wifiName":
-        handleWifiName(call, result);
-        break;
-      case "wifiBSSID":
-        handleBSSID(call, result);
-        break;
-      case "wifiIPAddress":
-        handleWifiIPAddress(call, result);
-        break;
-      default:
-        result.notImplemented();
-        break;
+    @Override
+    public void onCancel(Object arguments) {
+        merlin.unbind();
     }
-  }
 
-  private void handleCheck(MethodCall call, final Result result) {
-    result.success(checkNetworkType());
-  }
+    private String getNetworkType(ConnectivityManager manager) {
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 
-  private String checkNetworkType() {
-    return getNetworkType(manager);
-  }
+            Network network = manager.getActiveNetwork();
+            NetworkCapabilities capabilities = manager.getNetworkCapabilities(network);
+            if (capabilities == null) {
+                return "none";
+            }
+            if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
+                    || capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)) {
+                return "wifi";
+            }
+            if (capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)) {
+                return "mobile";
+            }
+        }
 
-  private WifiInfo getWifiInfo() {
-    WifiManager wifiManager =
-        (WifiManager)
-            registrar.context().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-    return wifiManager == null ? null : wifiManager.getConnectionInfo();
-  }
+        return getNetworkTypeLegacy(manager);
+    }
 
-  private void handleWifiName(MethodCall call, final Result result) {
-    WifiInfo wifiInfo = getWifiInfo();
-    String ssid = null;
-    if (wifiInfo != null) ssid = wifiInfo.getSSID();
-    if (ssid != null) ssid = ssid.replaceAll("\"", ""); // Android returns "SSID"
-    result.success(ssid);
-  }
+    @SuppressWarnings("deprecation")
+    private String getNetworkTypeLegacy(ConnectivityManager manager) {
+        // handle type for Android versions less than Android 9
+        NetworkInfo info = manager.getActiveNetworkInfo();
+        if (info == null || !info.isConnected()) {
+            return "none";
+        }
+        int type = info.getType();
+        switch (type) {
+            case ConnectivityManager.TYPE_ETHERNET:
+            case ConnectivityManager.TYPE_WIFI:
+            case ConnectivityManager.TYPE_WIMAX:
+                return "wifi";
+            case ConnectivityManager.TYPE_MOBILE:
+            case ConnectivityManager.TYPE_MOBILE_DUN:
+            case ConnectivityManager.TYPE_MOBILE_HIPRI:
+                return "mobile";
+            default:
+                return "none";
+        }
+    }
 
-  private void handleBSSID(MethodCall call, MethodChannel.Result result) {
-    WifiInfo wifiInfo = getWifiInfo();
-    String bssid = null;
-    if (wifiInfo != null) bssid = wifiInfo.getBSSID();
-    result.success(bssid);
-  }
+    @Override
+    public void onMethodCall(MethodCall call, Result result) {
+        switch (call.method) {
+            case "check":
+                handleCheck(call, result);
+                break;
+            case "wifiName":
+                handleWifiName(call, result);
+                break;
+            case "wifiBSSID":
+                handleBSSID(call, result);
+                break;
+            case "wifiIPAddress":
+                handleWifiIPAddress(call, result);
+                break;
+            default:
+                result.notImplemented();
+                break;
+        }
+    }
 
-  private void handleWifiIPAddress(MethodCall call, final Result result) {
-    WifiManager wifiManager =
-        (WifiManager)
-            registrar.context().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+    private void handleCheck(MethodCall call, final Result result) {
+        result.success(checkNetworkType());
+    }
 
-    WifiInfo wifiInfo = null;
-    if (wifiManager != null) wifiInfo = wifiManager.getConnectionInfo();
+    private String checkNetworkType() {
+        return getNetworkType(manager);
+    }
 
-    String ip = null;
-    int i_ip = 0;
-    if (wifiInfo != null) i_ip = wifiInfo.getIpAddress();
+    private WifiInfo getWifiInfo() {
+        WifiManager wifiManager =
+                (WifiManager)
+                        registrar.context().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        return wifiManager == null ? null : wifiManager.getConnectionInfo();
+    }
 
-    if (i_ip != 0)
-      ip =
-          String.format(
-              "%d.%d.%d.%d",
-              (i_ip & 0xff), (i_ip >> 8 & 0xff), (i_ip >> 16 & 0xff), (i_ip >> 24 & 0xff));
+    private void handleWifiName(MethodCall call, final Result result) {
+        WifiInfo wifiInfo = getWifiInfo();
+        String ssid = null;
+        if (wifiInfo != null) ssid = wifiInfo.getSSID();
+        if (ssid != null) ssid = ssid.replaceAll("\"", ""); // Android returns "SSID"
+        result.success(ssid);
+    }
 
-    result.success(ip);
-  }
+    private void handleBSSID(MethodCall call, MethodChannel.Result result) {
+        WifiInfo wifiInfo = getWifiInfo();
+        String bssid = null;
+        if (wifiInfo != null) bssid = wifiInfo.getBSSID();
+        result.success(bssid);
+    }
+
+    private void handleWifiIPAddress(MethodCall call, final Result result) {
+        WifiManager wifiManager =
+                (WifiManager)
+                        registrar.context().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+
+        WifiInfo wifiInfo = null;
+        if (wifiManager != null) wifiInfo = wifiManager.getConnectionInfo();
+
+        String ip = null;
+        int i_ip = 0;
+        if (wifiInfo != null) i_ip = wifiInfo.getIpAddress();
+
+        if (i_ip != 0)
+            ip =
+                    String.format(
+                            "%d.%d.%d.%d",
+                            (i_ip & 0xff), (i_ip >> 8 & 0xff), (i_ip >> 16 & 0xff), (i_ip >> 24 & 0xff));
+
+        result.success(ip);
+    }
 }

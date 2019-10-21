@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:1:1-5:12
-INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:1:1-5:12
-INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:1:1-5:12
+ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:1:1-11:12
+INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:1:1-11:12
 	package
 		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:2:3-44
 		INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml
@@ -17,6 +17,14 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:4:3-74
 	android:name
 		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:4:20-71
+application
+ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:6:5-10:19
+service#com.novoda.merlin.MerlinService
+ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:7:9-9:62
+	android:exported
+		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:8:13-37
+	android:name
+		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml:9:13-59
 uses-sdk
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/android/src/main/AndroidManifest.xml

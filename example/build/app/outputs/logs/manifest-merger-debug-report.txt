@@ -4,34 +4,8 @@ ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/conne
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:1:1-20:12
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:1:1-20:12
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:1:1-20:12
-MERGED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-10:12
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:2:1-20:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a99e58a44d2ec987b84c750f5e508f33/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/c1065dd6783e684f0d879f4325d267dd/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/afda4860e033d76f9adefe751b7db9ab/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/c00b86b7913786545ea9cfb51ddd0335/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/65d18c12af3c8f82818ac654f26dd130/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/b9b752a549ef576c9fd4586fa3dbd015/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f685f931130d89cc3ceac470b33c40d7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fc2184269922173f4600573b50006112/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/b7b9bc37412dcdbf731c58aa75feaed6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/2bf713a4b561214d16474b1ae33bcf1a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/9f966d86482dd494f720bbbd7ac43ab3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/451ebc39798ade4473c8690e91ee7854/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/73d57aa47eb172a98d796d3a94b8d88b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/171c307575bfd2155220b989fd5eb067/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/470201d37b5d3fd1d389853b389d3e91/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/09f7c9b97dedafd0463740facb415bdd/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/945371ba18d469e35397a06760d3c1f5/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/710c47b7e068b5e48f5d63252c52c562/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/587dc5f41157407ee68f693d7ded29a7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/8baa44352d022e778283c93e2118ac07/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/002eb169728a3476c578ac747718b71f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/ee95196065cf484510eeb235ea3cea7e/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/fab0b53a71e03a856a72ee59a4380bb6/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/d907b83a974fb634238de3bd82a40f24/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/19f6cc1c486b04e68f6f2761b2ec359f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/f61456036c2065ba2c580970d45a2c58/AndroidManifest.xml:17:1-22:12
+MERGED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-16:12
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:2:1-16:12
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:1:1-20:12
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:1:1-20:12
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:1:1-20:12
@@ -53,27 +27,18 @@ INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/co
 		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:5:5-66
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:11:5-67
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:11:5-67
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:7:5-67
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:7:5-67
 	android:name
 		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:5:22-64
 application
 ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:7:5-19:19
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:14:5-18:19
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:14:5-18:19
-MERGED from [androidx.core:core:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/470201d37b5d3fd1d389853b389d3e91/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/470201d37b5d3fd1d389853b389d3e91/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/09f7c9b97dedafd0463740facb415bdd/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/09f7c9b97dedafd0463740facb415bdd/AndroidManifest.xml:22:5-23:19
-	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/470201d37b5d3fd1d389853b389d3e91/AndroidManifest.xml:22:18-86
-	android:supportsRtl
-		ADDED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:17:9-35
+MERGED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-14:19
+MERGED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-14:19
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:10:5-14:19
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:10:5-14:19
 	android:label
 		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:7:97-140
-		REJECTED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:16:9-41
-	android:allowBackup
-		ADDED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:15:9-35
 	android:icon
 		ADDED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml:7:141-175
 	tools:replace
@@ -110,60 +75,8 @@ INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/co
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml
 MERGED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a99e58a44d2ec987b84c750f5e508f33/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/a99e58a44d2ec987b84c750f5e508f33/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/c1065dd6783e684f0d879f4325d267dd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/c1065dd6783e684f0d879f4325d267dd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/afda4860e033d76f9adefe751b7db9ab/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/afda4860e033d76f9adefe751b7db9ab/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/c00b86b7913786545ea9cfb51ddd0335/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/c00b86b7913786545ea9cfb51ddd0335/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/65d18c12af3c8f82818ac654f26dd130/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/65d18c12af3c8f82818ac654f26dd130/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/b9b752a549ef576c9fd4586fa3dbd015/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/b9b752a549ef576c9fd4586fa3dbd015/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f685f931130d89cc3ceac470b33c40d7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/f685f931130d89cc3ceac470b33c40d7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fc2184269922173f4600573b50006112/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/fc2184269922173f4600573b50006112/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/b7b9bc37412dcdbf731c58aa75feaed6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/b7b9bc37412dcdbf731c58aa75feaed6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/2bf713a4b561214d16474b1ae33bcf1a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/2bf713a4b561214d16474b1ae33bcf1a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/9f966d86482dd494f720bbbd7ac43ab3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/9f966d86482dd494f720bbbd7ac43ab3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/451ebc39798ade4473c8690e91ee7854/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/451ebc39798ade4473c8690e91ee7854/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/73d57aa47eb172a98d796d3a94b8d88b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/73d57aa47eb172a98d796d3a94b8d88b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/171c307575bfd2155220b989fd5eb067/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/171c307575bfd2155220b989fd5eb067/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/470201d37b5d3fd1d389853b389d3e91/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/470201d37b5d3fd1d389853b389d3e91/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/09f7c9b97dedafd0463740facb415bdd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/09f7c9b97dedafd0463740facb415bdd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/945371ba18d469e35397a06760d3c1f5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/945371ba18d469e35397a06760d3c1f5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/710c47b7e068b5e48f5d63252c52c562/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/710c47b7e068b5e48f5d63252c52c562/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/587dc5f41157407ee68f693d7ded29a7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/587dc5f41157407ee68f693d7ded29a7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/8baa44352d022e778283c93e2118ac07/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/8baa44352d022e778283c93e2118ac07/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/002eb169728a3476c578ac747718b71f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/002eb169728a3476c578ac747718b71f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/ee95196065cf484510eeb235ea3cea7e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/ee95196065cf484510eeb235ea3cea7e/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/fab0b53a71e03a856a72ee59a4380bb6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/fab0b53a71e03a856a72ee59a4380bb6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/d907b83a974fb634238de3bd82a40f24/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/d907b83a974fb634238de3bd82a40f24/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/19f6cc1c486b04e68f6f2761b2ec359f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/19f6cc1c486b04e68f6f2761b2ec359f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/f61456036c2065ba2c580970d45a2c58/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/f61456036c2065ba2c580970d45a2c58/AndroidManifest.xml:20:5-44
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:5:5-44
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:5:5-44
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -176,11 +89,19 @@ INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/co
 		INJECTED from /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:12:5-79
-MERGED from [com.github.jumadeveloper:networkmanager:0.0.2] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-networkmanager-0.0.2.aar/80dcbea40794720713f6d51c9e2e59ca/AndroidManifest.xml:12:5-79
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:8:5-79
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:8:5-79
 	android:name
 		ADDED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-76
 	android:name
 		ADDED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-73
+service#com.novoda.merlin.MerlinService
+ADDED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-13:40
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:11:9-13:40
+MERGED from [com.novoda:merlin:1.2.0] /Users/goncalopalma/.gradle/caches/transforms-1/files-1.1/jetified-merlin-1.2.0.aar/a162f1864009e7f19900c6cc28b5be22/AndroidManifest.xml:11:9-13:40
+	android:exported
+		ADDED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:connectivity] /Users/goncalopalma/FlutterProjects/openSource/plugins/packages/connectivity/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-59
